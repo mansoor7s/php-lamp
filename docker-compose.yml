@@ -5,9 +5,9 @@ services:
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: admin!23
   front:
     image: phpapp
     restart: always
     ports:
-      - 80
+      - 80:80
